@@ -73,7 +73,7 @@ body {
 
 .text {
     font-size: 3vh;
-    margin: 10vh 25vh 7.5vh 7vh;
+    margin: 5vh 25vh 5vh 7vh;
     display: flex;
     flex-direction: column;
     gap: 4vh
@@ -81,6 +81,7 @@ body {
 
 .text > p {
     margin: 0px;
+
 }
 
 fieldset {
@@ -114,6 +115,12 @@ legend {
 
 .one {
     gap: 4vh;
+    padding-bottom: 5vh;
+}
+
+.two {
+    padding-top: 3vh;
+    padding-bottom: 0px;
 }
 
 label {
@@ -130,4 +137,23 @@ input {
     border: 1.5px solid rgb(182, 182, 182);
     border-radius: 1vh;
     padding: 1vh;
+}
+
+button {
+    background-color: #596D48;
+    border: 0px;
+    width: 18vw;
+    height: 9vh;
+    margin: 3vh 0vh;
+    font-size: 3vh;
+    color: white;
+    border-radius: 1vh;
+}
+
+.two > p > a {
+    color: #596D48;
+}
+
+.two > p {
+    font-size: 3vh;
 }
