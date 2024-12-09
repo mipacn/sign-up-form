@@ -137,6 +137,22 @@ input {
     border: 1.5px solid rgb(182, 182, 182);
     border-radius: 1vh;
     padding: 1vh;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    border: #596D48 1.5px solid;
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(89, 109, 72, 0.5);
+}
+
+input:invalid {
+    border: 1.5px solid #d9534f;
+}
+
+input:invalid:focus {
+    border: 1.5px solid #d9534f;
+    box-shadow: 0 0 5px 2px rgba(217, 83, 79, 0.5);
 }
 
 button {
@@ -144,16 +160,60 @@ button {
     border: 0px;
     width: 18vw;
     height: 9vh;
-    margin: 3vh 0vh;
+    margin: 3vh 0vh 5vh 0vh;
     font-size: 3vh;
     color: white;
     border-radius: 1vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
+
+button:hover {
+    background-color: #708d57;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
 
 .two > p > a {
     color: #596D48;
+    transition: color 0.5s ease;
+    text-decoration: none;
+    position: relative
+}
+
+
+.two > p > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #596d48;
+    transition: width 0.3s ease;
+}
+
+.two > p > a:hover {
+    color: #708d57;
+}
+
+.two > p > a:hover::after {
+    width: 100%;
 }
 
 .two > p {
     font-size: 3vh;
+    margin: 0px;
 }
+
+.error-message {
+    display: none;
+    color: #d9534f;
+    font-size: 1.5vh;
+    margin-top: 0px;
+  }
+
+  input:invalid + .error-message {
+    display: block;
+  }
