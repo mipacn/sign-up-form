@@ -1,0 +1,66 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+    font-family: odin;
+    src: url(Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    margin: 0px;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.img {
+    height: 100vh;
+    width: auto;
+    position: relative;
+}
+
+.logo {
+    padding: 2vh 0vh;
+    position: absolute;
+    top: 20vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    justify-content: center;
+    font-size: 10vh;
+}
+
+.logo > p {
+    font-family: odin;
+    margin: 0px;
+    position: relative;
+    top: 1.2vh;
+}
+
+.odin {
+    height: 15vh;
+}
+
+.footer {
+    position: absolute;
+    bottom: 1vh;
+    color: white;
+    margin: 0px;
+}
+
+.citation {
+    margin: 0px;
+    font-size: 2vh;
+    font-weight: lighter;
+}
+
+a {
+    color: white;
+}
