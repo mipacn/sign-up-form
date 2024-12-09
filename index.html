@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="left">
-        <img src="sign-up-form-image.avif" class="img">
+        <img src="sign-up-form-image.png" class="img">
         <div class="logo">
             <img src="./odin-lined.png" class="odin">
             <p>ODIN</p>
@@ -20,7 +20,7 @@
     </div>
     <div class="right">
         <div class="text">
-            <p>This is not a real online service!
+            <p> This is not a real online service!
 
                 You know you need something like this in your life to help you realize your deepest dreams.
                 
@@ -33,10 +33,40 @@
             <form action="#" method="post">
                 <fieldset class="one">
                     <legend>Let's do this!</legend>
+                    <div class="input-group">
+                        <div class="input-element">
+                            <label for="first-name">FIRST NAME</label>
+                            <input pattern="[A-Za-z]+" type="text" name="first-name" id="first-name">
+                        </div>
+                        <div class="input-element">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-element">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="input-element">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" pattern="\+\d{1,3}\s\d{9,10}" name="phone" id="phone">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-element">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" minlength="8">
+                        </div>
+                        <div class="input-element">
+                            <label for="c-password">CONFIRM PASSWORD</label>
+                            <input type="password" name="password" id="c-password" minlength="8">
+                        </div>
+                    </div>
                 </fieldset>
                 <fieldset class="two">
                     <button>Create Account</button>
-                    <p></p>
+                    <p>Already have an account? <a href="#">Log in</a></p>
                 </fieldset>
             </form>
         </div>
